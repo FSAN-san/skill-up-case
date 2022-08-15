@@ -1,0 +1,233 @@
+@charset "UTF-8";
+html {
+  font-size: 10vw;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 10rem;
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+
+.wrap1 {
+  background-color: #fff;
+  padding-bottom: 0.5733333333rem;
+}
+.wrap1 header {
+  text-align: center;
+  height: 1.0666666667rem;
+  line-height: 1.0666666667rem;
+  font-size: 0.4666666667rem;
+  color: #1c1c1c;
+  border-bottom: 1px solid #eaeaea;
+}
+.wrap1 nav {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  margin: 0.6rem 0 0.8rem 0;
+}
+.wrap1 nav img {
+  width: 1.8533333333rem;
+  height: 1.8533333333rem;
+}
+.wrap1 nav a {
+  flex: 33.3%;
+}
+.wrap1 nav a p {
+  font-size: 0.3333333333rem;
+}
+.wrap1 nav a:nth-child(-n+3) {
+  margin-bottom: 0.8266666667rem;
+}
+.wrap1 .go {
+  margin: 0 0.1333333333rem 0 0.24rem;
+}
+.wrap1 .go img {
+  width: 100%;
+}
+
+.content-wrap {
+  background-color: #fff;
+  padding: 0.5333333333rem 0.2933333333rem;
+  margin-top: 0.1333333333rem;
+}
+.content-wrap .content-hd {
+  display: flex;
+  justify-content: space-between;
+  height: 0.5066666667rem;
+  line-height: 0.5066666667rem;
+  margin-bottom: 0.0666666667rem;
+}
+.content-wrap .content-hd h4 {
+  font-size: 0.3733333333rem;
+  color: #333;
+}
+.content-wrap .content-hd h4 img {
+  width: 0.5066666667rem;
+}
+.content-wrap .content-hd a {
+  font-size: 0.2933333333rem;
+  color: #999;
+}
+.content-wrap .swiper-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.content-wrap .swiper-box .swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  --swiper-navigation-color: #000; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 30px; /* 设置按钮大小 */
+}
+.content-wrap .swiper-box .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.6;
+}
+.content-wrap .swiper-box .swiper-slide a {
+  width: 4.5066666667rem;
+  height: 5.0133333333rem;
+  position: relative;
+}
+.content-wrap .swiper-box .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.content-wrap .swiper-box .swiper-slide p {
+  width: 4.5066666667rem;
+  font-size: 0.3333333333rem;
+  margin-top: 0.32rem;
+  visibility: hidden;
+}
+.content-wrap .swiper-box .swiper-slide-active, .content-wrap .swiper-box .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 2;
+  opacity: 1;
+}
+.content-wrap .swiper-box .swiper-slide-active p, .content-wrap .swiper-box .swiper-slide-duplicate-active p {
+  visibility: visible;
+}
+.content-wrap .swiper-box .swiper-button-next {
+  right: -40px !important;
+}
+.content-wrap .swiper-box .swiper-button-prev {
+  left: -40px !important;
+}
+.content-wrap .study {
+  position: relative;
+  font-size: 0.3333333333rem;
+}
+.content-wrap .study .swiper {
+  width: 100%;
+  height: 100%;
+}
+.content-wrap .study .swiper .swiper-wrapper {
+  padding: 0.1333333333rem;
+}
+.content-wrap .study .swiper .swiper-slide {
+  width: 3.8666666667rem;
+  height: 4.5333333333rem;
+  background-color: #fff;
+  border-radius: 0.1333333333rem;
+  box-shadow: 0 0 0.1333333333rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.content-wrap .study .swiper .swiper-slide img {
+  width: 100%;
+}
+.content-wrap .study .swiper .swiper-slide h5 {
+  font-size: 0.3733333333rem;
+  font-weight: 400;
+  margin: 0.2666666667rem 0.1333333333rem;
+}
+.content-wrap .study .swiper .swiper-slide p {
+  font-size: 0.3333333333rem;
+  padding-left: 0.2rem;
+}
+.content-wrap .study .swiper .swiper-slide p span {
+  font-size: 0.3466666667rem;
+  color: #ff4400;
+}
+
+.footer-space {
+  height: 1.4666666667rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+footer nav {
+  display: flex;
+  margin: 0 auto;
+  background-color: #fff;
+  min-width: 320px;
+  width: 10rem;
+  height: 1.4666666667rem;
+  padding-top: 0.2666666667rem;
+}
+footer nav a {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1;
+}
+footer nav a img {
+  width: 0.52rem;
+  height: 0.5466666667rem;
+}
+footer nav a p {
+  margin-top: 0.1333333333rem;
+  font-size: 0.2933333333rem;
+}
+
+/*# sourceMappingURL=index.css.map */

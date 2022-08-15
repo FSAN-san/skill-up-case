@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,use-scalable=no">
+    <title>Title</title>
+    <!-- 布局选型：rem + vw/vh + flex + 媒体查询 -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 使用swiper做轮播图 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<section class="wrap1">
+    <!-- 头部 start -->
+    <header>rem+vw移动端练习（黑马面面）</header>
+    <!-- 头部 end -->
+
+    <!-- 导航栏 start -->
+    <nav>
+        <a href="#">
+            <img src="./icons/icon1.png" alt="">
+            <p>HR面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/icon2.png" alt="">
+            <p>笔试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/icon3.png" alt="">
+            <p>技术面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/icon4.png" alt="">
+            <p>模拟面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/icon5.png" alt="">
+            <p>面试技巧</p>
+        </a>
+        <a href="#">
+            <img src="./icons/icon6.png" alt="">
+            <p>薪资查询</p>
+        </a>
+    </nav>
+    <!-- 导航栏 end -->
+
+    <!-- go 模块 start -->
+    <div class="go">
+        <img src="./images/go.png" alt="">
+    </div>
+    <!-- go 模块 end -->
+</section>
+
+<!-- 就业指导模块 start -->
+<section class="content-wrap">
+    <!-- 可复用盒子 -->
+    <div class="content-hd">
+        <h4>
+            <img src="./icons/i2.png" alt="">
+            就业指导
+        </h4>
+        <a href="#">更多>></a>
+    </div>
+    <!-- 轮播图 start -->
+    <div class="swiper-box">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href=""><img src="./images/pic.png" alt=""></a>
+                    <p>老师教你应对面试技巧1</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="./images/2.jpg" alt=""></a>
+                    <p>老师教你应对面试技巧2</p>
+                </div>
+                <div class="swiper-slide">
+                    <a href=""><img src="./images/3.jpg" alt=""></a>
+                    <p>老师教你应对面试技巧3</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <!-- 轮播图 end -->
+</section>
+<!-- 就业指导模块 end -->
+
+<!-- 充电学习模块 start -->
+<section class="content-wrap">
+    <!-- 可复用盒子 -->
+    <div class="content-hd">
+        <h4>
+            <img src="./icons/i1.png" alt="">
+            充电学习
+        </h4>
+        <a href="#">更多>></a>
+    </div>
+    <!-- 轮播图 start -->
+    <div class="study">
+        <div class="swiper study-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说地道英语，告别中式英语</h5>
+                    <p><span>156</span>人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说地道英语，告别中式英语</h5>
+                    <p><span>156</span>人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说地道英语，告别中式英语</h5>
+                    <p><span>156</span>人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说地道英语，告别中式英语</h5>
+                    <p><span>156</span>人学习</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/pic1.png" alt="">
+                    <h5>说地道英语，告别中式英语</h5>
+                    <p><span>156</span>人学习</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播图 end -->
+</section>
+<!-- 充电学习模块 end -->
+
+<!-- 帮底部占个空间 start -->
+<div class="footer-space"></div>
+<!-- 帮底部占个空间 end-->
+
+<!-- 底部 start -->
+<footer>
+    <nav>
+        <a href="#">
+            <img src="./icons/home.png" alt="">
+            <p>首页</p>
+        </a>
+        <a href="#">
+            <img src="./icons/ms.png" alt="">
+            <p>模拟面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/net.png" alt="">
+            <p>技术面试</p>
+        </a>
+        <a href="#">
+            <img src="./icons/user.png" alt="">
+            <p>我的首页</p>
+        </a>
+    </nav>
+</footer>
+<!-- 底部 end -->
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    // 使用沙箱函数包装，就业学习模块的轮播图
+    (() => {
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 2,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    })();
+
+    // 充电学习模块的轮播图
+    (() => {
+        var swiper = new Swiper(".study-swiper", {
+            slidesPerView: 2.3,
+            spaceBetween: 20
+        });
+    })()
+
+
+</script>
+</html>
