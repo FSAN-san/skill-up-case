@@ -1,0 +1,23 @@
+// 登录大背景
+.login {
+  height: 100%;
+  background-color: #fff;
+
+  // 登录表单容器
+  .containers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+
+    // logo
+    img {
+      display: block;
+      margin: 0 auto 20px;
+      height: 80px;
+      width: 200px;
+      background-color: #daaf00;
+    }
+  }
+}
